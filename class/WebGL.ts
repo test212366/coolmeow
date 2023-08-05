@@ -144,7 +144,7 @@
 		eventScroll() {
 			let icoScale = .75
 			if(this.width < 1600) icoScale = .6 
-			if(this.width < 500) icoScale = .5 
+			if(this.width < 500) icoScale = .45 
 
 
 			document.addEventListener('scroll', e => {
@@ -333,7 +333,7 @@
 			this.ico.scale.set(.6, .6, .6)
 		}  
 		if(this.width < 500) {
-			this.ico.scale.set(.5, .5, .5)
+			this.ico.scale.set(.45 , .45 ,.45 )
 
 		}
 	}
@@ -349,6 +349,8 @@
 			let h = .4
 			if(this.width < 1600) h = 0
 			if(this.width < 1370) h = -.2
+			if(this.width < 450) h = -.35
+
 
 			for (let i = 0; i < 13; i++) {
 				h += .12
