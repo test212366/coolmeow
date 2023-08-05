@@ -45,6 +45,8 @@
 	}
 	.description-right__amount p{
 		text-align: center;
+		color: #8b8b8b;
+
 	}
 	.description-right__amount {
 		margin-top: 40px;
@@ -114,6 +116,8 @@
 			/* border-radius: none !important; */
 			width: 80%;
 			border-radius: 0 !important;
+			-webkit-backdrop-filter: blur(4px);
+			backdrop-filter: blur(4px);
 		}
 		.description-right__section {
 			
@@ -124,8 +128,8 @@
 			max-width: 80%;
 			position: static;
 			background-color: rgba(255, 255, 255, 0.041);
-			-webkit-backdrop-filter: blur(10px);
-			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(4px);
+			backdrop-filter: blur(4px);
 			height: unset;
 			border-radius: 0 0 40px 0;
 		}

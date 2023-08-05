@@ -21,6 +21,7 @@
 		max-width: 700px;
 		line-height: 21px;
 		font-size: 14px;
+		color: #8b8b8b;
 
 	}
 	.subDesc {

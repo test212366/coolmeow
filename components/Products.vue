@@ -20,6 +20,8 @@
 		font-size: 14px;
 		text-align: center;
 		margin-bottom: 50px;
+		color: #8b8b8b;
+
 	}
 	.product__item {
 		margin-bottom: 150px;
@@ -48,6 +50,9 @@
 		max-width: 700px;
 		line-height: 22px;
 		text-align: end;
+		color: #8b8b8b;
+		font-size: 14px;
+
 	}
 	.end p{
 		text-align: start !important;

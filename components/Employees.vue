@@ -45,6 +45,8 @@
 		font-size: 14px;
 		line-height: 22px;
 		margin-top: 50px;
+		color: #8b8b8b;
+
 	}
 	
 	@media screen and (max-width: 1000px) {

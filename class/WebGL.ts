@@ -144,6 +144,8 @@
 		eventScroll() {
 			let icoScale = .75
 			if(this.width < 1600) icoScale = .6 
+			if(this.width < 500) icoScale = .5 
+
 
 			document.addEventListener('scroll', e => {
 				const scrollY = window.scrollY / 690
@@ -287,6 +289,7 @@
 			side: THREE.DoubleSide,
 			uniforms: {
 				time: {value: 0},
+				uColor: {value: new THREE.Color(0x5400BE)},
 				resolution: {value: new THREE.Vector4()}
 			},
 			vertexShader,
@@ -328,8 +331,11 @@
 	responsive() {
 		if(this.width < 1600) {
 			this.ico.scale.set(.6, .6, .6)
-		 
 		}  
+		if(this.width < 500) {
+			this.ico.scale.set(.5, .5, .5)
+
+		}
 	}
 
  
@@ -694,7 +700,11 @@
 
 			this.time += 0.05
 
-			this.material.uniforms.time.value = this.time / 100
+			if(this.width < 1000) {
+				this.material.uniforms.time.value = this.time / 50
+			} else this.material.uniforms.time.value = this.time / 100
+
+
 			this.materialBGPlane.uniforms.time.value = this.time
 			// if(this.materialDNA) this.materialDNA.uniforms.time.value = this.time
 			//this.renderer.setRenderTarget(this.renderTarget)

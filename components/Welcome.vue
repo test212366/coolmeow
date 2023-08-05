@@ -21,6 +21,7 @@
 	.welcome-left__section p {
 		font-size: 14px;
 		color: #8b8b8b;
+
 		line-height: 22px;
 		margin-bottom: 30px;
 	}
@@ -46,6 +47,8 @@
 	}
 	.welcome-right__amount p{
 		text-align: center;
+		color: #8b8b8b;
+
 	}
 	.welcome-right__amount {
 		margin-top: 40px;
@@ -122,7 +125,8 @@
 	@media screen and (max-width: 880px) {
 		
 		.welcome-left__section {
-	 
+			-webkit-backdrop-filter: blur(4px);
+			backdrop-filter: blur(4px);
 			width: 80%;
 		}
 		.welcome-right__section {
@@ -133,8 +137,8 @@
 			max-width: 80%;
 			position: static;
 			background-color: rgba(255, 255, 255, 0.041);
-			-webkit-backdrop-filter: blur(10px);
-			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(4px);
+			backdrop-filter: blur(4px);
 
 		}
 		.welcome-right__amount {

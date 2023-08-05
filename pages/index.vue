@@ -47,6 +47,7 @@
 
 	body {
 		overscroll-behavior: none;
+		background-color: black;
 	}
 	body::-webkit-scrollbar {
 	
